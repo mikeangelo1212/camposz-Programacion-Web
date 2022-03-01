@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style:inside;
+    width: 300px;
+    height: 500px;
+}
+
+
+/* Inicialmente los submenús estan escondidos */
+ul > li > ul {
+    display: none;
+}
+
+/* Los submenús solo se mostrarán cuando el usuario haga click en la opción <a>
+   y se llegue desde el enlace al elemento <li> */
+ul > li:target > ul {
+    display: block;
+    height: 100%;
+}
+
+#opc1
+{
+    background-color: red;
+    text-decoration: none;
+}
+#opc2
+{
+    background-color: blue;
+    text-decoration: none;
+}
+#opc3
+{
+    background-color: orange;
+    text-decoration: none;
+}
+.opcion {
+    background: blue;
+    color: white;
+}
+
+a { color: white;
+    text-decoration: none;
+}
+
+.subOpcion {
+    padding-left: 40px;
+    background: gray;
+    color: white;
+}
+#opc1 .subOpcion { /*pal doom*/
+    padding-left: 40px;
+    background: crimson;
+    color: white;
+
+}
+#opc2 .subOpcion { /*pal Wolf*/
+    padding-left: 40px;
+    background: gray;
+    color: white;
+
+}
+#opc3 .subOpcion { /*pal quake*/
+    padding-left: 40px;
+    background: rgb(158, 53, 15);
+    color: white;
+
+}
