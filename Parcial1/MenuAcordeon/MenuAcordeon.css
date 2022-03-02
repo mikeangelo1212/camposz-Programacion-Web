@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Tahoma;
+    
 }
 
 ul {
@@ -12,13 +13,11 @@ ul {
 }
 
 
-/* Inicialmente los submenús estan escondidos */
+
 ul > li > ul {
     display: none;
 }
 
-/* Los submenús solo se mostrarán cuando el usuario haga click en la opción <a>
-   y se llegue desde el enlace al elemento <li> */
 ul > li:target > ul {
     display: block;
     height: 100%;
