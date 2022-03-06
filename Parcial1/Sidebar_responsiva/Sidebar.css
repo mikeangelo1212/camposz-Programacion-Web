@@ -72,7 +72,7 @@
 
   div.content #opcion4 /*Redneck Rampage*/
   { 
-    background-color: rgb(119, 202, 111);
+    background-color: rgb(35, 83, 31);
     margin-left: 20%;
     padding: 2%;
     height: 100%;
@@ -104,7 +104,10 @@
     }
     
 
-    div.content {margin-left: 0;}
+    div.content #opcion1,
+    div.content #opcion2,
+    div.content #opcion3,
+    div.content #opcion4  {margin-left: 0%;}
 
   }
 
