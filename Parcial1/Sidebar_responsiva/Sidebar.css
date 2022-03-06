@@ -1,0 +1,42 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.sidebar {
+    position: fixed;
+    background-color:rgb(255, 175, 55);
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+  }
+
+  a 
+  {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color:black
+  }
+
+  a:hover
+  {
+    background-color: rgb(255, 107, 107);
+    color: white;
+  }
+
+  div.contenido
+  { 
+    background-color: cadetblue;
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1500px;
+  }
+
+  .contenidoOpcion { display: none; }
+
+    #opcion1:target,
+    #opcion2:target,
+    #opcion3:target,
+    #opcion4:target { display: block;}
