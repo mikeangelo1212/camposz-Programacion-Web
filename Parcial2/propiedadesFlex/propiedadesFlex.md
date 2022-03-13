@@ -16,7 +16,7 @@ Representa (en este ejemplo) un **contenedor** con tres **elementos** flex.
 <img src="flexdir.png">
 
 Define en que direccion se van a apilar los elementos flex del contenedor.
->Ejemplo: El valor `columna` apila los elementos flex verticalmente (descendiente)
+>Ejemplo: El valor `column` apila los elementos flex verticalmente (descendiente)
 
 ```css
 .flex-container {
