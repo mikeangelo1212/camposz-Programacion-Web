@@ -1,0 +1,45 @@
+*
+{box-sizing: border-box;
+ margin:0;
+ border:0;
+ font-family: 'Segoe UI';
+ color: black;
+}
+
+.contenedor
+{
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgb(130, 255, 228);
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+}
+
+.caja
+{
+    width:150px;
+    height: 150px;
+    background-color: rgb(255, 128, 255);
+    text-align:end;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+
+}
+
+@media screen and (max-width: 1200px) 
+{
+    .contenedor
+    {
+        flex-direction: column;
+        flex-wrap: space-between;
+        align-items: center;
+    }
+    .caja
+    {
+        text-align: center;
+    }
+}
