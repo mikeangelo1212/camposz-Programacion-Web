@@ -1,0 +1,47 @@
+*
+{box-sizing: border-box;
+ margin:0;
+ border:0;
+ font-family: 'Segoe UI';
+ color: black;
+}
+
+.contenedor
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(130, 255, 228);
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    justify-content: center;
+    align-content: center;
+}
+
+.caja
+{
+    width:150px;
+    height: 150px;
+    background-color: rgb(255, 128, 255);
+    text-align:end;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align:center;
+
+}
+
+/*@media screen and (max-width: 1200px) 
+{
+    .contenedor
+    {
+        flex-direction: column;
+        flex-wrap: space-between;
+        align-items: center;
+    }
+    .caja
+    {
+        text-align: center;
+    }
+} Aqui era el media querie del problema anterior xd*/
