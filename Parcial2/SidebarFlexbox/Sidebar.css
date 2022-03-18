@@ -1,0 +1,128 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+  }
+
+  .contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  div.sidebar {
+    float: left;
+    background-color:rgb(255, 175, 55);
+    width: 35%;
+    height: auto;
+    overflow: auto;
+    order: 0;
+    text-align: center;
+  }
+  /*.header
+  {
+    background-color:rgb(255, 175, 55);
+    text-align: center;
+    float: right;
+    width: 100%;
+  }*/
+
+  a 
+  {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+
+  }
+
+  a:hover
+  {
+    background-color: rgb(255, 107, 107);
+    color: white;
+  }
+
+  div.content 
+  { 
+    float: left;
+    background-color: rgb(73, 59, 114);
+    padding: 2%;
+    height: auto;
+    width: calc(100%-20%);
+    color:rgb(233, 184, 255);
+  }  /*ESTE ES SIN LA OPCION, por asi decirlo el estilo default*/
+   
+  /*div.content #opcion1 /*Duke
+  { 
+    background-color: rgb(0, 0, 0);
+        margin-left: 20%;
+        padding: 2%;
+        height: 100%;
+    color:rgb(255, 220, 62);
+  }
+
+  div.content #opcion2 /*Shadow Warrior
+  { 
+    background-color: rgb(255, 64, 64);
+    margin-left: 20%;
+    padding: 2%;
+    height: 100%;
+    color:rgb(253, 248, 255);
+  }
+
+  div.content #opcion3 /*Blood, el mejor de los 4
+  { 
+    background-color: rgb(114, 12, 18);
+    margin-left: 20%;
+    padding: 2%;
+    height: 100%;
+    color:rgb(255, 255, 255);
+  }
+
+  div.content #opcion4 /*Redneck Rampage
+  { 
+    background-color: rgb(35, 83, 31);
+    margin-left: 20%;
+    padding: 2%;
+    height: 100%;
+    color:rgb(255, 160, 104);
+  }
+  */
+  .content img
+  {
+    width: 50%;
+  }
+
+
+  .contenidoOpcion { display: none; }
+
+  #opcion1:target,
+  #opcion2:target,
+  #opcion3:target,
+  #opcion4:target { display: block;}
+  
+
+  @media screen and (max-width: 1200px) 
+  {
+    .contenedor{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    div.sidebar 
+    {
+       float: none;
+       flex-flow: column;
+       text-align: center;
+       width: auto;
+    }
+    
+
+    div.content #opcion1,
+    div.content #opcion2,
+    div.content #opcion3,
+    div.content #opcion4  {margin-left: 0%;}
+
+  }
+
+ 
