@@ -12,8 +12,8 @@
     height: 100vh;
     background-color: rgb(130, 255, 228);
     display: grid;
-    grid-template-columns: 20% 20% 20%;
-    grid-template-rows: 20% 20% 20%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
     grid-template-areas: 'header header header'
                         'cont1 cont2 cont3'
                         'footer footer footer';
