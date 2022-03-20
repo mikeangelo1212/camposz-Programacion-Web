@@ -19,7 +19,7 @@ img{
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 20% 60% 20%;
     grid-template-areas: 'header header header'
-                        'cont1 cont2 cont3'
+                        'section1 section2 section3'
                         'footer footer footer';
     justify-content: center;
     align-content: center;
@@ -57,15 +57,16 @@ a:hover{
     font-size: 400%;
 }
 
-#cont1{
-    grid-area: cont1;
+#section1{
+    grid-area: section1;
 }
-#cont2{
-    grid-area: cont2;
+#section2{
+    grid-area: section2;
 }
-#cont3{
-    grid-area: cont3;
+#section3{
+    grid-area: section3;
 }
+
 
 #footer{
     grid-area: footer;
