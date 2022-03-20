@@ -71,16 +71,21 @@ a:hover{
 #footer{
     grid-area: footer;
 }
-/*@media screen and (max-width: 1200px) 
+@media screen and (max-width: 1200px) 
 {
-    .contenedor
-    {
-        flex-direction: column;
-        flex-wrap: space-between;
-        align-items: center;
+    a{
+       font-size: 120%;
     }
-    .caja
-    {
-        text-align: center;
+    #header{
+        font-size: 250%;
     }
-} Aqui era el media querie del problema anterior xd*/
+} 
+@media screen and (max-width: 800px) 
+{
+    a{
+       font-size: 100%;
+    }
+    #header{
+        font-size: 175%;
+    }
+} 
