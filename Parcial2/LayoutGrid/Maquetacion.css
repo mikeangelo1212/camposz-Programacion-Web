@@ -2,18 +2,22 @@
 {box-sizing: border-box;
  margin:0;
  border:0;
- font-family: 'Segoe UI';
+ font-family: 'Lucida Sans Unicode';
  color: black;
+}
+
+img{
+    width: 70%;
 }
 
 .contenedor
 {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(130, 255, 228);
+    background-color: rgb(179, 179, 179);
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 60% 20%;
     grid-template-areas: 'header header header'
                         'cont1 cont2 cont3'
                         'footer footer footer';
@@ -24,7 +28,7 @@
 .caja
 {
 
-    background-color: rgb(255, 128, 255);
+    background-color: rgb(75, 78, 255);
     text-align:end;
     border-style: solid;
     border-color: black;
@@ -33,8 +37,24 @@
 
 }
 
+a{
+    color: rgb(45, 240, 119);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 200%;
+}
+
+a:hover img{
+    opacity: 50%;
+    
+}
+a:hover{
+    color: crimson;
+}
+
+
 #header{
     grid-area: header;
+    font-size: 400%;
 }
 
 #cont1{
