@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>practicaFlex</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="GridPropiedades.css">
+</head>
+<body>
+    <div id = "idcontenedor" class="contenedor">
+        <div id="caja1" class="caja">Caja 1</div>
+        <div id="caja2" class="caja">Caja 2</div>
+        <div id="caja3" class="caja">Caja 3</div>
+        <div id="caja4" class="caja">Caja 4</div>
+        
+    </div>
+    <script>
+    window.onload =function(){
+    document.getElementById("idcontenedor").addEventListener("click",function(evento){
+    console.log(evento.target.id);
+    document.getElementById(evento.target.id).classList.toggle("cajaColor");
+    });
+}
+    </script>
+</body>
+
+</html>
