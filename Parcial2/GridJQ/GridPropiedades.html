@@ -17,14 +17,21 @@
         
     </div>
     <script>
-    window.onload =function(){
+    /*window.onload =function(){
     document.getElementById("idcontenedor").addEventListener("click",function(evento)
     {
         console.log(evento.target.id);
         document.getElementById(evento.target.id).classList.toggle("cajaColor");
     }                                                       ); 
-}
+}*/
 
+$(document).ready(function (){
+    $('#idcontenedor').click(function(e){
+        console.log(e);
+        $(e.target).toggleClass('cajaColor');
+
+    });
+});
     </script>
     <!--El script de arriba agarra el id del documento y esta listo para escuchar el clic
     el console.log sepa que hace y lo ultimo de document.getElementByID hace el toggle del color en las cajas-->
