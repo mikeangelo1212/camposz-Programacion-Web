@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Formulario con Bootstrap</title>
+    <link rel="stylesheet" href="FormBoot.css">
+    <div id="header">Header original</div>
+    <script src="01_cargarArchivo.js"></script>
+    <script src="02_cargarControl.js"></script>
+</head>
+
+
+<!--  jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+    <div class="container-sm">
+        <div class="row" id="controles">
+            <div class="col-6">
+            <form>
+                <div id="texto"> <!--son las barras de texto-->
+                    <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    
+                    <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="Contrasena">
+                    </div>
+
+                    <label for="password" class="form-label">Foto de perfil</label>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="archivo">
+                        <label class="input-group-text" for="archivo">Subir imagen</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="pregunta" class="form-label">Como conocio esta escuela?</label>
+                        <textarea class="form-control" id="explicacion" rows="3"></textarea>
+                    </div>
+                
+                    <div class="mb-3">
+                            <label for="explicacion" class="form-label">Porque decidio entrar a esta escuela?</label>
+                            <textarea class="form-control" id="explicacion" rows="3"></textarea>
+                    </div>
+            
+                </div>
+                <div class="row" id="filarb"> <!--Esta fila es para los radiobuttons-->
+                <label for="filarb" class="form-label">Sexo</label>    
+                    <div class="col">
+                        <div class="mb-3 form-check">
+                        <input type="radio" class="form-radio-input" id="rbMasculino">
+                        <label class="form-radio-label" for="chkDeportes">Masculino</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3 form-check">
+                        <input type="radio" class="form-radio-input" id="rbFemenino">
+                        <label class="form-radio-label" for="chkDeportes">Femenino</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="filachk"> <!--Esta fila es para las checkboxes-->
+                <label for="filachk" class="form-label">Intereses</label>    
+                    <div class="col">
+                        <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="chkDeportes">
+                        <label class="form-check-label" for="chkDeportes">Deportes</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="chkFotografia">
+                        <label class="form-check-label" for="chkFotografia">Fotografia</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="chkComida">
+                        <label class="form-check-label" for="chkComida">Comida</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="registrar" class="btn btn-primary">Registrar</button>
+                <button id="btn1" type="button" class="btn btn-primary">Registrar (Modal)</button>
+                <button id="btn2" type="button" class="btn btn-default" data-toggle="modal" data-target="#modal1">Sin java</button>
+                <button id="btn3" type="button" class="btn btn-default">Con java</button>
+
+                <div class="alert alert-primary alert-dismissible collapse" role="alert" id="alerta1">
+                    Hola
+                    <button id="btncloseAlert" type="button" class="close"  aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    Hola 2, la sequela
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+                
+                
+                <script>//Script del boton 
+                    $(document).ready(function(){
+                        $("#btn1").click(function(){
+                            //console.log("click en bt1")
+                            $('#alerta1').show();
+                            
+                        });
+                        $('#btncloseAlert').click(function(){
+                            $('#alerta1').hide();
+                        });
+                        $("#btn2").click(function(){
+                            console.log("click en bt2")
+                            
+                        });
+                        $("#btn3").click(function(){
+                            console.log("click en bt3")
+                            $('#modal1').modal();
+                            
+                        });
+                    });
+                </script>
+            </form>
+            </div>
+            <div class="col-6">
+                
+                <div class="row" id="controles">
+                <div id="divajax"><h2>Header de nivel 2</h2></div>
+
+                <button id="btnajax"  type="button">Cambiar Header</button>
+                <button id="btnreset" type="button">Regresar</button>
+            </div>
+                <div class="row" id="controles">
+                    <input id="nom" type="text" name="nombre" oninput="ajaxFunction();" />
+                    <label for="hor">Hora</label>
+                    <input id="hor" type="text" name="hora" size="20" />
+                </div>
+            
+            </div>
+            <label for="nom">Nombre</label>
+       
+           
+        </div>
+    </div>
+</body>
+<html>
