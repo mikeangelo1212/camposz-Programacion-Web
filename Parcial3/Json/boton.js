@@ -5,12 +5,12 @@
 
                 console.log(data);
                 $('#idE').val(data.idE);
-                $('#NombreProducto').val(data.NombreProducto);
-                $('#idP').val(data.idP);
+                $('#NombreCliente').val(data.NombreCliente);
+                $('#idEmpaque').val(data.idEmpaque);
                 $('#idPresentacion').val(data.idPresentacion);
                 $('#costo').val(data.costo);
                 $('#cantidad').val(data.cantidad);
-                $('#idC').val(data.idC);
+                $('#sabor').val(data.sabor);
                 $('#idEstado').val(data.idEstado);
 
             },'json');

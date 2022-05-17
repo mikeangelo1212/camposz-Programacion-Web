@@ -1,13 +1,13 @@
 <?php
 
-$registro['idE']  ='123';
-$registro['NombreProducto'] ='Gerardo';
-$registro['idP']       ='PC';
-$registro['idPresentacion'] ='XBOX';
+$registro['idE']  ='19100154';//idEmpleado
+$registro['NombreCliente'] ='Miguel';
+$registro['idEmpaque']       ='Plastico';//idEmpaque
+$registro['idPresentacion'] ='Pay';
 $registro['costo'] ='100';
-$registro['cantidad']     ='10';
-$registro['idC']     ='TEEN';
-$registro['idEstado']       ='Nuevo';
+$registro['cantidad']     ='5';
+$registro['sabor']     ='Fresa';
+$registro['idEstado']       ='Bueno';
 
 $registroJson = json_encode($registro);
 echo $registroJson;
