@@ -24,4 +24,4 @@ insert into Pedido (nombreCliente,idEmpaque,idPresentacion,costo,cantidad,sabor,
 			values ('Victor',		'Carton','Pastel',	200,	1,'Red Velvet',	'Bueno'); 
 select *from pedido;
 
-
+DELETE FROM pedido WHERE idEmpleado=3;
