@@ -19,7 +19,7 @@ try {
 
 
 try {
-$consultaSql = "select * from pedido where idEmpleado=".$idEmpleado;
+$consultaSql = "select * from pedido where idPedido=".$idEmpleado;
 $consulta = $con -> prepare($consultaSql);
 $consulta -> execute();
 $resultado = $consulta->fetch(PDO::FETCH_ASSOC);

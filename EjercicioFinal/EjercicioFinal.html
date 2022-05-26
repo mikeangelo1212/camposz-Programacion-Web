@@ -20,30 +20,30 @@
     <form class="form" name="formulario1" action="CargarControl.js">
 
       <div id="Cabeza">
-        <h1> REGISTRO DE PASTELES</h1>
+        <h1> REGISTRO DE PEDIDOS</h1>
     </div>
         <br></br>
       <div class="row">
-          <div class="form-group col-sm-12 col-md-4 col-lg-12">
-                <label for="idE" class="text-info">ID DEL EMPLEADO</label>
-                <input id="idE" type="text" class="form-control" placeholder=""/>
+          <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                <label for="idPedido" class="text-info">ID DEL PEDIDO</label>
+                <input id="idPedido" type="text" class="form-control" placeholder=""/>
           </div>
-          <div class="form-group col-sm-12 col-md-8 col-lg-12">
-                <label for="NombreCliente" class="text-info">NOMBRE DEL CLIENTE</label>
-                <input id="NombreCliente" oninput="ajaxFunction();" type="text" class="form-control" placeholder=""/>
+          <div class="form-group col-sm-12 col-md-8 col-lg-8">
+                <label for="nombreCliente" class="text-info">NOMBRE DEL CLIENTE</label>
+                <input id="nombreCliente" oninput="ajaxFunction();" type="text" class="form-control" placeholder=""/>
           </div>
       </div>
 
 
       <div class="row">
           <div class="form-group col-sm-12 col-md-8 col-lg-6">
-                <label for="idEmpaque" class="text-info">EMPAQUE</label>
-                <input id="idEmpaque" type="text" class="form-control" placeholder=""/>
+                <label for="empaque" class="text-info">EMPAQUE</label>
+                <input id="empaque" type="text" class="form-control" placeholder=""/>
 
           </div>
           <div class="form-group col-sm-12 col-md-4 col-lg-6">
-                <label for="Presentacion" class="text-info">PRESENTACION</label>
-                <input id="idPresentacion" type="text" class="form-control" placeholder=""/>
+                <label for="tipoDePastel" class="text-info">TIPO DE PASTEL</label>
+                <input id="tipoDePastel" type="text" class="form-control" placeholder=""/>
                 
           </div>
       </div>
@@ -59,13 +59,13 @@
                   <input id="cantidad" type="text" class="form-control" placeholder="" min="1"/>
             </div>
             <div class="form-group col-sm-12 col-md-6 col-lg-3">
-                  <label for="clasificacion" class="text-info">SABOR DEL PASTEL</label>
+                  <label for="sabor" class="text-info">SABOR DEL PASTEL</label>
                   <input id="sabor" type="text" class="form-control" placeholder=""/>
                   
             </div>
             <div class="form-group col-sm-12 col-md-6 col-lg-3">
-                  <label for="estado" class="text-info">ESTADO</label>
-                  <input id="idEstado" type="text" class="form-control" placeholder=""/>
+                  <label for="fecha" class="text-info">FECHA DE ELABORACION</label>
+                  <input id="fecha" type="text" class="form-control" placeholder=""/>
                 
             </div>
       </div>
@@ -95,6 +95,8 @@
 
   <button id="btnConsultar" type="button" class="btn btn-primary" title="Obtiene un objeto Json por consulta de MySQL">Consulta MySQL</button>
   <button id="btnInsertar" type="button" class="btn btn-primary" title="Insertar un objeto de los controles a MySQL">Insertar MySQL</button>
+  <button id="btnEditar" type="button" class="btn btn-primary" title="Elimina un registro de MySQL">Editar MySQL</button>
+  <button id="btnEliminar" type="button" class="btn btn-primary" title="Elimina un registro de MySQL">Eliminar MySQL</button>
 
 
 
