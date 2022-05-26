@@ -1,4 +1,5 @@
-    $(document).ready(function() {
+    $(document).ready(function() 
+{
 
       $('#btnjson').click(function() {
           $.post('getRegistro.php',{},function(data){
@@ -15,6 +16,36 @@
 
             },'json');
       });
+
+      $('#btnfetch').click(function(){
+        fetch("getRegistro.php")
+         .then( respuesta => respuesta.json() )
+         .then( datos => console.log(datos) );
+
+      });
+      
+      
+      //Este boton es pa 
+      $('#btnConsultar').click(function() {
+        let idX=prompt("Teclee el ID a consultar");
+        console.log("El id introducido es "+idX);
+        $.post('consultar.php',{id:idX},function(data)
+        {
+          refrescar(data);
+        },'json');
+       });
+
+    function refrescar(objeto) {
+        console.log(objeto);
+        $('#idE').val(objeto.idEmpleado);
+        $('#NombreCliente').val(objeto.nombreCliente);
+        $('#idEmpaque').val(objeto.idEmpaque);
+        $('#idPresentacion').val(objeto.idPresentacion);
+        $('#costo').val(objeto.costo);
+        $('#cantidad').val(objeto.cantidad);
+        $('#sabor').val(objeto.sabor);
+        $('#idEstado').val(objeto.idEstado);
+  }
 
       
 });

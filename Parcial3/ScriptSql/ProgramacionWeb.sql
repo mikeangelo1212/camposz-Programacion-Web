@@ -22,6 +22,6 @@ insert into Pedido (nombreCliente,idEmpaque,idPresentacion,costo,cantidad,sabor,
 			values ('Carla',		'Plastico','Pastel',	500,	2,'Chocolate',	'Bueno'); 
 insert into Pedido (nombreCliente,idEmpaque,idPresentacion,costo,cantidad,sabor,idEstado) 
 			values ('Victor',		'Carton','Pastel',	200,	1,'Red Velvet',	'Bueno'); 
-select *from pedido;
+select * from pedido;
 
-DELETE FROM pedido WHERE idEmpleado=3;
+select * from pedido where idEmpleado=2 ;

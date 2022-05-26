@@ -22,6 +22,8 @@ $(document).ready(function() {
          .then( datos => console.log(datos) );
 
     });
+
+   
 });
 
 // document.getElementById("btnfetch").addEventListener(click,function(){
