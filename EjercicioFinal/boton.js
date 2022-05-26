@@ -37,14 +37,14 @@
 
     function refrescar(objeto) {
         console.log(objeto);
-        $('#idE').val(objeto.idEmpleado);
+        $('#idE').val(objeto.idPedido);
         $('#NombreCliente').val(objeto.nombreCliente);
-        $('#idEmpaque').val(objeto.idEmpaque);
-        $('#idPresentacion').val(objeto.idPresentacion);
+        $('#idEmpaque').val(objeto.empaque);
+        $('#idPresentacion').val(objeto.tipoDePastel);
         $('#costo').val(objeto.costo);
         $('#cantidad').val(objeto.cantidad);
         $('#sabor').val(objeto.sabor);
-        $('#idEstado').val(objeto.idEstado);
+        $('#idEstado').val(objeto.fecha);
   }
 
       

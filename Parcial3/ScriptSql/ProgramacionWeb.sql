@@ -1,17 +1,17 @@
 create database L19100154; 
-use L19100154;
+use l19100154;
 
 create table Pedido
 (
-idEmpleado smallint not null AUTO_INCREMENT,
+idPedido smallint not null AUTO_INCREMENT,
 nombreCliente varchar(30), 
-idEmpaque varchar(30), /*Charola de plastico, caja y asi*/
-idPresentacion varchar(30), /*Si es pay o pastel*/
+empaque varchar(30), /*Charola de plastico, caja y asi*/
+tipoDePastel varchar(30), /*Si es pay o pastel*/
 costo double(5,2), 
 cantidad int, 
 sabor varchar(32),
-idEstado varchar(12), /*si esta bueno el pastel para comerse*/
-PRIMARY KEY (idEmpleado)
+fecha varchar(12), /*si esta bueno el pastel para comerse*/
+PRIMARY KEY (idPedido)
 );
 
 insert into Pedido (nombreCliente,idEmpaque,idPresentacion,costo,cantidad,sabor,idEstado) 
