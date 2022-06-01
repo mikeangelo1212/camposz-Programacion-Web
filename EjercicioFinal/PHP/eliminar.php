@@ -14,7 +14,6 @@ try{
     exit();
 }
 
-//$con->setAttribute(PDO::ATT_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 try{
     
@@ -25,7 +24,7 @@ try{
     $consulta->closeCursor();
 
 }catch(PDOException $e){
-    echo "Error de la consulta";
+    echo "Error al eliminar";
     echo $e->getMessage();
 
 }

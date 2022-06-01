@@ -21,19 +21,17 @@ try{
     exit();
 }
 
-//$con->setAttribute(PDO::ATT_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 try{
     
     $consultaSql = "update pedido set nombreCliente='$NombreC',empaque='$Empaque',tipoDePastel='$TipoDePastel',costo=$Costo,cantidad=$Cantidad, sabor='$Sabor',fecha ='$Fecha'where idPedido = $id;";
-    //"update Jugadores set NombreCom = '$NombreC', NombreDelJuego = '$NombreJ', Rango = '$Rango', Edad = $Edad, Pais = '$Pais' where idID = $id  " ;
     $consulta = $con -> prepare($consultaSql);
     $consulta -> execute();
     $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
     $consulta->closeCursor();
 
 }catch(PDOException $e){
-    echo "Error d la consulta";
+    echo "Error al editar";
     echo $e->getMessage();
 
 }

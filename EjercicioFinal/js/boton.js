@@ -1,28 +1,28 @@
     $(document).ready(function() 
 {
 
-      $('#btnjson').click(function() {
-          $.post('getRegistro.php',{},function(data){
+      // $('#btnjson').click(function() {
+      //     $.post('getRegistro.php',{},function(data){
 
-                console.log(data);
-                $('#idE').val(data.idE);
-                $('#NombreCliente').val(data.NombreCliente);
-                $('#idEmpaque').val(data.idEmpaque);
-                $('#idPresentacion').val(data.idPresentacion);
-                $('#costo').val(data.costo);
-                $('#cantidad').val(data.cantidad);
-                $('#sabor').val(data.sabor);
-                $('#idEstado').val(data.idEstado);
+      //           console.log(data);
+      //           $('#idE').val(data.idE);
+      //           $('#NombreCliente').val(data.NombreCliente);
+      //           $('#idEmpaque').val(data.idEmpaque);
+      //           $('#idPresentacion').val(data.idPresentacion);
+      //           $('#costo').val(data.costo);
+      //           $('#cantidad').val(data.cantidad);
+      //           $('#sabor').val(data.sabor);
+      //           $('#idEstado').val(data.idEstado);
 
-            },'json');//ESTO NO ES IMPORTANTE NO LO TOMES EN CUENTA
-      });
+      //       },'json');//ESTO NO ES IMPORTANTE NO LO TOMES EN CUENTA
+      // });
 
-      $('#btnfetch').click(function(){
-        fetch(".../PHP/getRegistro.php")
-         .then( respuesta => respuesta.json() )
-         .then( datos => console.log(datos) );
+      // $('#btnfetch').click(function(){
+      //   fetch(".../PHP/getRegistro.php")
+      //    .then( respuesta => respuesta.json() )
+      //    .then( datos => console.log(datos) );
 
-      });
+      // });
       
       $('#btnInsertar').click(function(){
         let Insertar = document.getElementById('nombreCliente').value;
@@ -52,7 +52,7 @@
          refrescar(data);//El que esta entre asteriscos es el nombre con el que llegan al php *NOMBREC*:Nombre  
         },'json');
         }
-        //Limpiar();
+        //limpiar();
       });
 
       $('#btnEditar').click(function(){
@@ -116,17 +116,17 @@
         }
         else
         {
-          let parid = document.getElementById('idPedido').value;
-          console.log("El elemento a ELIMINAR es ".parid);
+          let idX = document.getElementById('idPedido').value;
+          console.log("El elemento a ELIMINAR es ".idX);
           $.post('../PHP/eliminar.php',
         {
-          id:parid
+          id:idX
         },function(data){
          refrescar(data);  
         },'json');
         swal("Objeto eliminado correctamente");
         }
-      Limpiar();
+      limpiar();
      });
 
      function refrescar(objeto) 
@@ -144,9 +144,9 @@
  
      $('#btnLimpiar').click(function() {
       console.log("Ya estamos limpiando")
-      Limpiar();
+      limpiar();
      });
-     function Limpiar(){
+     function limpiar(){
        document.getElementById('idPedido').value = "";
        document.getElementById('nombreCliente').value = "";
        document.getElementById('empaque').value = "";

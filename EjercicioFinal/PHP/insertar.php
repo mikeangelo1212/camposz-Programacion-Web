@@ -20,20 +20,18 @@ try{
     exit();
 }
 
-//$con->setAttribute(PDO::ATT_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 try{
     //FALTA PERSONALIZAR QUERY
     $consultaSql = "insert into Pedido (nombreCliente,empaque,    tipoDePastel,  costo,     cantidad, sabor,     fecha) 
                                 values ('$NombreC',	  '$Empaque','$TipoDePastel',$Costo,	$Cantidad,'$Sabor',	'$Fecha');";
-    //"insert into n19100190.jugadores (NombreCom,NombreDelJuego,Rango,Edad,Pais) values('$NombreC','$NombreJ','$Rango',$Edad,'$Pais');" ;
     $consulta = $con -> prepare($consultaSql);
     $consulta -> execute();
     $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
     $consulta->closeCursor();
 
 }catch(PDOException $e){
-    echo "Error de la consulta";
+    echo "Error al insertar";
     echo $e->getMessage();
 
 }
