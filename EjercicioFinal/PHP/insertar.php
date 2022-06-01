@@ -22,7 +22,6 @@ try{
 
 
 try{
-    //FALTA PERSONALIZAR QUERY
     $consultaSql = "insert into Pedido (nombreCliente,empaque,    tipoDePastel,  costo,     cantidad, sabor,     fecha) 
                                 values ('$NombreC',	  '$Empaque','$TipoDePastel',$Costo,	$Cantidad,'$Sabor',	'$Fecha');";
     $consulta = $con -> prepare($consultaSql);
