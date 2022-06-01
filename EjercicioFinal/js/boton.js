@@ -52,7 +52,7 @@
          refrescar(data);//El que esta entre asteriscos es el nombre con el que llegan al php *NOMBREC*:Nombre  
         },'json');
         }
-        Limpiar();
+        //Limpiar();
       });
 
       $('#btnEditar').click(function(){
@@ -84,7 +84,7 @@
           SABOR:Sabor,
           FECHA:Fecha
         },function(data){
-         refrescar(data);  
+         //refrescar(data);  
         },'json');
         }
         
