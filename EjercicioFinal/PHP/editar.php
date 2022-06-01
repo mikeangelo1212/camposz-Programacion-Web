@@ -1,5 +1,5 @@
 <?php
-$id = $_POST['par1'];
+$id = $_POST['id'];
 $NombreC = $_POST['NOMBREC'];
 $Empaque = $_POST['EMPAQUE'];
 $TipoDePastel = $_POST['TIPODEP'];

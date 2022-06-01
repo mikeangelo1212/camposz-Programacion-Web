@@ -64,8 +64,8 @@
         }
         else
         {
-          let parid = document.getElementById('idPedido').value;
-          console.log("El elemento a EDITAR es ".parid);
+          let idX = document.getElementById('idPedido').value;
+          console.log("El elemento a EDITAR es ".idX);
           let NombreCliente = document.getElementById('nombreCliente').value;
           let Empaque = document.getElementById('empaque').value;
           let TipoDePastel = document.getElementById('tipoDePastel').value;
@@ -75,7 +75,7 @@
           let Fecha = document.getElementById('fecha').value;
         $.post('../PHP/editar.php',
         {
-          par1:parid,
+          id:idX,
           NOMBREC:NombreCliente,
           EMPAQUE:Empaque,
           TIPODEP:TipoDePastel,
